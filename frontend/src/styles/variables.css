@@ -1,0 +1,54 @@
+:root{
+  --bg: #ffffff;
+  --surface: #f6f7fb;
+  --text: #0f1724;
+  --muted: #6b7280;
+  --accent: #2563eb;
+  --accent-contrast: #ffffff;
+  --radius: 10px;
+  --input-bg: #ffffff;
+  --shadow: 0 6px 18px rgba(16,24,40,0.06);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root{
+    --bg: #0b1220;
+    --surface: #071127;
+    --text: #e6eef8;
+    --muted: #9aa7bd;
+    --accent: #4f9cff;
+    --accent-contrast: #062240;
+    --input-bg: #071127;
+    --shadow: 0 6px 24px rgba(2,6,23,0.6);
+  }
+}
+
+/* utility sizes */
+:root{
+  --gap-sm: 8px;
+  --gap: 16px;
+  --gap-lg: 24px;
+}
+
+/* JS-driven theme support: allow toggling via `document.documentElement.dataset.theme` */
+:root[data-theme='dark']{
+  --bg: #0b1220;
+  --surface: #071127;
+  --text: #e6eef8;
+  --muted: #9aa7bd;
+  --accent: #4f9cff;
+  --accent-contrast: #062240;
+  --input-bg: #071127;
+  --shadow: 0 6px 24px rgba(2,6,23,0.6);
+}
+
+:root[data-theme='light']{
+  --bg: #ffffff;
+  --surface: #f6f7fb;
+  --text: #0f1724;
+  --muted: #6b7280;
+  --accent: #2563eb;
+  --accent-contrast: #ffffff;
+  --input-bg: #ffffff;
+  --shadow: 0 6px 18px rgba(16,24,40,0.06);
+}

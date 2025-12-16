@@ -1,0 +1,73 @@
+.env
+.env.*
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build outputs
+/frontend/dist/
+/frontend/build/
+/backend/dist/
+/backend/build/
+dist/
+build/
+
+# Vite / cache
+.vite/
+.cache/
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+pnpm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Coverage
+coverage/
+coverage-final.json
+
+# Test output
+/jest-cache/
+/jest-coverage/
+
+# Misc
+*.tgz
+*.gz
+*.zip
+
+# Uploaded media (if you store user uploads locally during development)
+/uploads/
+
+# Local env overrides
+.local
+
+# MacOS Finder attributes
+.AppleDouble
+.LSOverride
+
+# Temporary files
+*.tmp
+*.temp
+
+# Ignore swagger generated docs, build artifacts
+/docs/
+
+# Ignore credentials stored by some editors
+*.pem
+*.key
