@@ -23,7 +23,7 @@ const CreateFood = () => {
     return () => URL.revokeObjectURL(url);
   }, [videoFile]);
 
-  const BACKEND_URL = "https://zomato-clone-backend.onrender.com";
+  const BACKEND_URL = "https://zomato-clone-2blv.onrender.com";
 
   const onFileChange = (e) => {
     const file = e.target.files && e.target.files[0];

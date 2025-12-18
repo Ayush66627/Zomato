@@ -8,7 +8,7 @@ const UserLogin = () => {
    
     const navigate = useNavigate()
 
-   const BACKEND_URL = "https://zomato-clone-backend.onrender.com";
+   const BACKEND_URL = "https://zomato-clone-2blv.onrender.com";
 
     const handleSubmit = async (e) => {
       e.preventDefault()

@@ -8,7 +8,7 @@ const Home = () => {
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();  // ← Navigation ke liye
 
-  const BACKEND_URL = "https://zomato-clone-backend.onrender.com";
+  const BACKEND_URL = "https://zomato-clone-2blv.onrender.com";
 
   useEffect(() => {
     const fetchVideosAndCheckAuth = async () => {

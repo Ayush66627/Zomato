@@ -6,7 +6,7 @@ import ReelFeed from '../../components/ReelFeed'
 const Saved = () => {
     const [ videos, setVideos ] = useState([])
 
-    const BACKEND_URL = "https://zomato-clone-backend.onrender.com";
+    const BACKEND_URL = "https://zomato-clone-2blv.onrender.com";
 
     useEffect(() => {
         axios.get(`${BACKEND_URL}/api/food/save`, { withCredentials: true })
