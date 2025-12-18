@@ -8,7 +8,7 @@ const UserLogin = () => {
    
     const navigate = useNavigate()
 
-   
+   const BACKEND_URL = "https://zomato-clone-backend.onrender.com";
 
     const handleSubmit = async (e) => {
       e.preventDefault()
@@ -17,7 +17,7 @@ const UserLogin = () => {
       console.log('Form submitted:', { email, password })
       
       try {
-          const response = await axios.post('https://zomato-clone-backend.onrender.com/api/auth/user/login', {
+          const response = await axios.post(`${BACKEND_URL}/api/auth/user/login`, {
             email,
             password
           }, {

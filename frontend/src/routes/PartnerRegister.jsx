@@ -8,6 +8,8 @@ import { useNavigate } from 'react-router-dom'
 const PartnerRegister = () => {
   const navigate = useNavigate()
 
+  const BACKEND_URL = "https://zomato-clone-backend.onrender.com";
+
   const handleSubmit = async (e) => {
     e.preventDefault()
     const businessName = e.target.businessName.value
@@ -19,7 +21,7 @@ const PartnerRegister = () => {
     console.log('Form submitted:', { businessName, email, password, phone, address })
 
     try {
-      const response = await axios.post('https://zomato-clone-backend.onrender.com/api/auth/food-partner/register', {
+      const response = await axios.post(`${BACKEND_URL}/api/auth/food-partner/register`, {
         businessName,
         email,
         password,

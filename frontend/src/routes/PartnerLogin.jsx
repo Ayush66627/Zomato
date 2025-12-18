@@ -7,6 +7,8 @@ import { useNavigate } from 'react-router-dom'
 const PartnerLogin = () => {
   const navigate = useNavigate()
 
+  const BACKEND_URL = "https://zomato-clone-backend.onrender.com";
+
   const handleSubmit = async (e) => {
     e.preventDefault()
     const email = e.target.email.value
@@ -14,7 +16,7 @@ const PartnerLogin = () => {
     console.log('Form submitted:', { email, password })
 
      try {
-       const response = await axios.post('https://zomato-clone-backend.onrender.com/api/auth/food-partner/login', {
+       const response = await axios.post(`${BACKEND_URL}/api/auth/food-partner/login`, {
           email,
           password
        }, {

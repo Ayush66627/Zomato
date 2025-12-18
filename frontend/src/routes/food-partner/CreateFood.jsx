@@ -23,6 +23,8 @@ const CreateFood = () => {
     return () => URL.revokeObjectURL(url);
   }, [videoFile]);
 
+  const BACKEND_URL = "https://zomato-clone-backend.onrender.com";
+
   const onFileChange = (e) => {
     const file = e.target.files && e.target.files[0];
     if (!file) {
@@ -70,7 +72,7 @@ const CreateFood = () => {
 
  try {
      const response = await axios.post(
-       "https://zomato-clone-backend.onrender.com/api/food",
+       `${BACKEND_URL}/api/food`,
        formData,
        {
          withCredentials: true,

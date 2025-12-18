@@ -8,11 +8,13 @@ const Profile = () => {
   const [profile, setProfile] = useState(null);
   const [videos, setVideos] = useState([]);
 
+  const BACKEND_URL = "https://zomato-clone-backend.onrender.com";
+
   useEffect(() => {
     if (!id) return;
 
     axios
-      .get(`https://zomato-clone-backend.onrender.com/api/foodpartner/${id}`, {  // ← full URL ya proxy use kar
+      .get(`${BACKEND_URL}/api/foodpartner/${id}`, {  // ← full URL ya proxy use kar
         withCredentials: true,
       })
       .then((response) => {

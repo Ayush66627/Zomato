@@ -8,10 +8,12 @@ const Home = () => {
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();  // ← Navigation ke liye
 
+  const BACKEND_URL = "https://zomato-clone-backend.onrender.com";
+
   useEffect(() => {
     const fetchVideosAndCheckAuth = async () => {
       try {
-        const response = await axios.get("/api/food", {
+        const response = await axios.get(`${BACKEND_URL}/api/food`, {
           withCredentials: true,
         });
 
