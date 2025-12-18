@@ -8,9 +8,13 @@ const foodPartnerRoutes = require('./routes/food-partner.route');
 const app = express();
 app.use(cookieParser());
 app.use(cors({
-    origin: 'http://localhost:5173',
+    origin: 'https://zomato-5-iz16.onrender.com',
     credentials: true,
 }));
+
+app.get("/", (req, res) => {
+  res.send("Backend live hai bhai! Zomato clone API running 🔥");
+});
 app.use(express.json());
 app.use('/api/auth', authRoutes);
 app.use('/api/food', foodRoutes);
