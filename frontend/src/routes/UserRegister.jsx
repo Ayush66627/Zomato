@@ -21,7 +21,7 @@ const UserRegister = () => {
     console.log('Form submitted:', { fullName, email, password })
 try {
   
-      const response = await axios.post('/api/auth/user/register', {
+      const response = await axios.post('https://zomato-clone-backend.onrender.com/api/auth/user/register', {
         fullName,
         email,
         password

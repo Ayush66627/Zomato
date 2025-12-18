@@ -19,7 +19,7 @@ const PartnerRegister = () => {
     console.log('Form submitted:', { businessName, email, password, phone, address })
 
     try {
-      const response = await axios.post('/api/auth/food-partner/register', {
+      const response = await axios.post('https://zomato-clone-backend.onrender.com/api/auth/food-partner/register', {
         businessName,
         email,
         password,

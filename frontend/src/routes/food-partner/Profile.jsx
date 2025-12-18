@@ -12,7 +12,7 @@ const Profile = () => {
     if (!id) return;
 
     axios
-      .get(`/api/foodpartner/${id}`, {  // ← full URL ya proxy use kar
+      .get(`https://zomato-clone-backend.onrender.com/api/foodpartner/${id}`, {  // ← full URL ya proxy use kar
         withCredentials: true,
       })
       .then((response) => {
