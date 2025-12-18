@@ -28,8 +28,8 @@ const PartnerRegister = () => {
         phone,
         address
       }, {
-        withCredentials: true
-
+        withCredentials: true,
+        timeout: 30000,
       })
       console.log("response", response.data)
 

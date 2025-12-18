@@ -36,6 +36,7 @@ const UserRegister = () => {
         },
         {
           withCredentials: true,
+          timeout: 30000,
         }
       );
 

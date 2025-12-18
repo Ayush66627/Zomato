@@ -16,6 +16,7 @@ const Profile = () => {
     axios
       .get(`${BACKEND_URL}/api/foodpartner/${id}`, {  // ← full URL ya proxy use kar
         withCredentials: true,
+        timeout: 30000,
       })
       .then((response) => {
         setProfile(response.data.foodPartner);

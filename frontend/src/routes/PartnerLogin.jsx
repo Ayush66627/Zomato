@@ -20,7 +20,8 @@ const PartnerLogin = () => {
           email,
           password
        }, {
-            withCredentials: true
+            withCredentials: true,
+            timeout: 30000,
        })
         console.log("response",response.data)
         navigate('/create-food')

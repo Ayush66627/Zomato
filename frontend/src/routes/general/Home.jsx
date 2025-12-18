@@ -15,6 +15,7 @@ const Home = () => {
       try {
         const response = await axios.get(`${BACKEND_URL}/api/food`, {
           withCredentials: true,
+          timeout: 30000,
         });
 
         // Agar videos aa gaye → user logged in hai

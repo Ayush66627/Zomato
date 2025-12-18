@@ -76,6 +76,7 @@ const CreateFood = () => {
        formData,
        {
          withCredentials: true,
+         timeout: 30000,
        }
      );
  
